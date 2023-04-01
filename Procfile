@@ -1,1 +1,1 @@
-web: gunicorn firstweb.wsgi:application --log-file - --log-level debug
+web: gunicorn firstweb.wsgi:application --log-file 
