@@ -28,3 +28,13 @@ class UserModelAdmin(BaseUserAdmin):
 
 # Now register the new UserModelAdmin...
 admin.site.register(User, UserModelAdmin)
+
+
+
+
+
+from django.contrib import admin
+
+admin.site.site_header = "DANISH KHAN"
+admin.site.site_title = "DANI ADMIN"
+admin.site.index_title = "WELWCOM "
