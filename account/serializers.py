@@ -43,7 +43,7 @@ class UserProfileSerializer(serializers.ModelSerializer):
     fields = ['id', 'email', 'name']
 
 # =======================================================================
-                                    # reset password
+                        # reset password
 # =======================================================================
 
 class UserChangePasswordSerializer(serializers.Serializer):
@@ -116,4 +116,10 @@ class UserPasswordResetSerializer(serializers.Serializer):
     except DjangoUnicodeDecodeError as identifier:
       PasswordResetTokenGenerator().check_token(user, token)
       raise serializers.ValidationError('Token is not Valid or Expired')
+  
+
+
+  array=['djangi is best ','but not for long project','if you want learn something in ']
+
+  find_char_array='a'
   
